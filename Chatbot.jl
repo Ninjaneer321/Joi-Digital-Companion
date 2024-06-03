@@ -1,7 +1,7 @@
 # Import the random module
 using Random
 
-# Define predefined rules and responses
+# Define pre-defined rules and responses
 responses = Dict(
     "hello" => ["Hello!", "Hi there!", "Hey!"],
     "how are you" => ["I'm just a chatbot.", "I don't have feelings, but I'm here to help."],
