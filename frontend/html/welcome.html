@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <h1 id="welcome-message">Welcome, [Name]</h1>
+        <div class="chat-popup">
+            <img src="images/chat-icon.png" alt="Chat Icon">
+            <p>Would you like to talk about your day?</p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+            document.getElementById('welcome-message').textContent = `Welcome, ${name}`;
+        });
+    </script>
+</body>
+</html>
